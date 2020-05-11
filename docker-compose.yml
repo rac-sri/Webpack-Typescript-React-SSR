@@ -1,0 +1,18 @@
+version: "3"
+services:
+    web:
+        build: .
+        ports:
+            - "8080:8080"
+        # links:
+        #       - db
+        volumes:
+            - .:home/node/src
+            - /home/node/src/node_modules]
+        labels:
+            kompose.service.type: LoadBalancer
+        environment:
+            MONGO_CONNECTION_STRING: mongodb://db:27017
+     
+     db:
+        image: mongo
