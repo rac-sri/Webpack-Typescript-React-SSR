@@ -23,7 +23,7 @@ module.exports = {
         plugins.MiniCssExtractPlugin,
         plugins.HtmlWebPackPlugin,
         plugins.CleanWebpackPlugin,
-        new webpack.ProgressPlugin(),
+        //   new webpack.ProgressPlugin(),
         new webpack.BannerPlugin({
             banner: (yourVariable) => {
                 return `yourVariable: ${yourVariable}`;

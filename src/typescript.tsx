@@ -1,8 +1,8 @@
 import React, { ReactFragment } from "react";
 
 const Function: () => any = () => (
-    <ReactFragment>
+    <React.Fragment>
         <h1>dskjlfklsd</h1>
-    </ReactFragment>
+    </React.Fragment>
 );
 export default Function;
