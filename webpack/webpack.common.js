@@ -1,5 +1,5 @@
-const loaders = require("./loaders/");
-const plugins = require("./plugins/");
+const loaders = require("./loaders/index");
+const plugins = require("./plugins/index");
 const webpack = require("webpack");
 
 module.exports = {
@@ -18,13 +18,11 @@ module.exports = {
             },
         ],
     },
-    resolve: {
-        extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
-    },
     plugins: [
         plugins.StyleLintPlugin,
         plugins.MiniCssExtractPlugin,
         plugins.HtmlWebPackPlugin,
+        plugins.CleanWebpackPlugin,
         new webpack.ProgressPlugin(),
         new webpack.BannerPlugin({
             banner: (yourVariable) => {

@@ -1,0 +1,12 @@
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react",
+        ["@babel/preset-typescript", { "isTsx": true }]
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-syntax-dynamic-import",
+        "babel-plugin-transform-html-import-require-to-string"
+    ]
+}

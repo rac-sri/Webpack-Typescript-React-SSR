@@ -1,0 +1,3 @@
+{
+   "**/*.+(js|jsx|css|less|scss|ts|tsx|md)": "npm run-script format"
+}

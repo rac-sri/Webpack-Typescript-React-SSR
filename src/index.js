@@ -1,5 +1,6 @@
-import App from "./App.tsx";
-import "./style.css";
-import ReactDom from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
 
-ReactDom.render(<App />, document.getElementById("root"));
+ReactDOM.hydrate(<App />, document.getElementById("root"));

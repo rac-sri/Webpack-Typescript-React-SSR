@@ -1,11 +1,6 @@
-const path = require("path");
 module.exports = {
     devtool: "eval-source-map",
     mode: "development",
-    entry: "./src/app/index.tsx",
+    entry: "./src/index.js",
     target: "web",
-    output: {
-        filename: "index.js",
-        path: path.join(__dirname, "build", "public"),
-    },
 };

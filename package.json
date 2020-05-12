@@ -1,12 +1,11 @@
 {
-    "name": "eosis-hack",
+    "name": "ssrboilerplate",
     "version": "1.0.0",
-    "description": "Project Made for EOSIS Hackathon",
+    "description": "Webpack Typescript React SSR",
     "main": "index.js",
     "scripts": {
         "dev": "npm run webpack-dev-server -- --host 0.0.0.0 --hot --env.mode development",
         "prod": "npm run webpack -- --env.mode production",
-        "server": "npm run webpack -- --env.mode server",
         "webpack": "webpack",
         "webpack-dev-server": "webpack-dev-server",
         "prod:typescript": "npm run prod -- --env.presets typescript",
@@ -23,25 +22,19 @@
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "format": "prettier --write \"src/**/*.{js,jsx}\"",
-        "build:backend": "tsc",
-        "start": "node ./build/server.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/rachit2501/EOSIS-Hack.git"
+        "start": "npm run prod && node server"
     },
     "author": "Rachit Anand",
     "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/rachit2501/EOSIS-Hack/issues"
-    },
-    "homepage": "https://github.com/rachit2501/EOSIS-Hack#readme",
     "dependencies": {
+        "@babel/preset-typescript": "^7.9.0",
+        "@babel/register": "^7.9.0",
         "@overnightjs/core": "^1.6.15",
         "@overnightjs/logger": "^1.1.10",
         "@reach/router": "^1.3.3",
         "babel-plugin-transform-html-import-require-to-string": "0.0.3",
         "http-status-codes": "^1.4.0",
+        "ignore-styles": "^5.0.1",
         "lint-staged": "^10.2.2",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
