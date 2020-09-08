@@ -7,7 +7,7 @@
     },
     "plugins": ["import", "prettier", "jsx-a11y", "react"],
     "parserOptions": {
-        "ecmaVarsion": 2018,
+        "ecmaVersion": 2020,
         "sourceType": "module",
         "ecmaFeatures": {
             "jsx": true,
