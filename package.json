@@ -22,7 +22,7 @@
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "format": "prettier --write \"src/**/*.{js,jsx}\"",
-        "start": "npm run prod && node server"
+        "start": "npm run prod && ts-node server"
     },
     "author": "Rachit Anand",
     "license": "ISC",
