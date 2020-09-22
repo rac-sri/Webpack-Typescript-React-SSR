@@ -4,7 +4,7 @@
     "description": "Webpack Typescript React SSR",
     "main": "index.js",
     "scripts": {
-        "dev": "npm run webpack-dev-server -- --host 0.0.0.0 --hot --env.mode development",
+        "dev": "npm run webpack-dev-server -- --host 0.0.0.0 --open --hot --env.mode development",
         "prod": "npm run webpack -- --env.mode production",
         "webpack": "webpack",
         "webpack-dev-server": "webpack-dev-server",
