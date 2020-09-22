@@ -7,8 +7,6 @@ import ReactDOMServer from "react-dom/server";
 
 import App from "../src/App";
 
-console.log(ts);
-
 const PORT = 3000;
 
 const app = express();

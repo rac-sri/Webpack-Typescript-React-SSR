@@ -5,4 +5,9 @@ require("@babel/register")({
     presets: ["@babel/preset-env", "@babel/preset-react"],
 });
 
+require("@babel/core").transform("code", {
+    filename: "../src/**/*/**",
+    presets: ["@babel/preset-typescript"],
+});
+
 require("./server");
